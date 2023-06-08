@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Roboto:wght@100;300;400&display=swap');
+/*grren color:  #00D393*/
+*{margin:0;padding:0}
+body{
+    background: rgb(30,30,30);
+    font-family: 'Lato', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    display: none;
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.95);
+    color: white;
+    font-size: 16px;
+    
+}
+.menu .close{
+    display: fixed;
+    float: right;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #00D393;
+}
+
+.menu .menu-list{
+    display: flex;
+    padding-top: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.menu .menu-list span{
+    padding: 5% 0;
+}
+
+.menu .social{
+    padding-top: 20%;
+}
+.nav-icon{
+    padding: 10px;
+}
+.nav-icon img{
+    width: 50px;
+}
+
+#home{
+    padding: 10% 5%;
+    height: 90vh;
+}
+
+.heading-1{
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 2%;
+}
+
+.heading-2{
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 30%;
+}
+
+.heading-2 span{
+    color: #00D393;
+}
+
+.summary{
+    padding: 0 5%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    line-height: 32px;
+}
+.summary span{
+    color:#00D393;
+    font-weight: 400;
+}
+
+.buttons{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-btn img{
+    width: 20px;
+    padding-right: 15px;
+}
+
+.contact-buttons{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.contact-btn{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+}
+
+
+.projects-btn{
+    border-radius: 5px;
+    border: 2px solid #00D393;
+    color: #00D393;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background: none;
+    transition: .2s ease all;
+    margin-bottom: 5%;
+}
+.projects-btn:hover{
+    background: #00D393;
+    color: #333;
+}
+
+.resume-btn{
+    border-radius: 5px; 
+    border: none;
+    background: #444;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: .2s ease all;
+}
+
+#aboutme{
+    background-color: #00d39479;
+    padding: 10% 5%;
+}
+
+#aboutme h2{
+    margin-bottom: 15%;
+}
+
+#aboutme p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.aboutme-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+}
+.aboutme-buttons button{
+    margin: 5px 0;
+}
+.aboutme-buttons button{
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.aboutme-buttons button:nth-child(2){
+    background-color: #00D393;
+    color: #333;
+    border: 2px solid #00D393;
+}
+
+.aboutme-buttons button:nth-child(3){
+    background-color: #333;
+    color: white;
+}
+
+#projects{
+    background-color: #00d3942d;
+    padding: 10% 5%;
+}
+
+#skills h2, #projects h2, #contact h2, #aboutme h2{
+    font-size: 36px;
+    text-align: center;
+}
+
+.chips{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chip{
+    font-size: 16px;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #00D393;
+    color: #000;
+    padding: 5px 7px;
+    margin: 5px;
+    transition: .3s ease all;
+}
+
+.chip .title{
+    font-size: 17px;
+}
+
+.chip .text{
+    display: none;
+    opacity: 0;
+    padding-top: 10px;
+    transition: .5s ease all;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.chip .text p:first-child{
+    padding-bottom: 10px;
+}
+.chips .text p:nth-child(2){
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+#skills, #contact{
+    padding: 10% 5%;
+    background-color: rgb(30,30,30);
+}
+
+.cards{
+    margin-top: 10%;
+}
+
+.cards .card{
+    margin: 10% 0;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px grey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.gallery{
+    margin: 5%;
+    display: flex;
+    flex-wrap:nowrap;
+    overflow-x: scroll;
+}
+
+.gallery img {
+    max-width: 100%;
+    margin: 0 10px;
+}
+
+.info-icon{
+    width: 30px;
+}
+
+.agenda{    
+    padding: 10px 15px;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.agenda span{
+    color: #00D393;
+    font-weight: 600;
+}
+
+.place{
+    margin: 10% 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-info{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+}
+    
+.contact-info p{
+    padding: 10px 0;
+}
+
+.modal{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.8);  
+}
+
+.modal-content {
+    background-color: rgba(10,10,10,0.85);
+    color: white;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px white;
+    border-radius: 10px;
+    width: 80%;
+    max-height: 80%;
+    overflow-y: scroll; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-content h3{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #00D393;
+    padding-bottom: 10px;
+}
+
+.modal-content h4 span{
+    font-weight: 900;
+}
+
+.modal-content h4{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.modal-content p {
+    padding: 10px;
+}
+
+.modal-content h5 {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.modal-content h5 a {
+    color: #00D393;
+    font-size: 18px;
+}
+
+.contact-form{
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 2%;
+    padding: 15px;
+}
+
+.contact-form h3{
+    font-size: 22px;
+    text-align: center;
+    color:#00D393;
+    margin-bottom: 30px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+form input, form textarea{
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+    background: rgba(255,255,255,0);
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+

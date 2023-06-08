@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dorottya Burmeister</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <nav id='menu' class="menu">
+            <span class="close" onclick="closeMenu()">X</span>
+            <div class="menu-list">
+                <span>About me</span>
+                <span>Skills</span>
+                <span>Projects</span>
+                <span>Contact</span>
+            </div>
+            <div class="social">
+                <span>Linkedin</span>
+                <span>Github</span>
+            </div>
+        </nav>
+        <nav class="nav-icon">
+            <img src="align.png" onclick="openNav()">
+        </nav>
+        <section id='home'>
+            <div class="heading-1">
+                Hello,  
+            </div>
+            <div class="heading-2">
+                I'm Dorottya, <span>web developer.</span>
+            </div>
+            <div class="summary">
+                Experienced frontend developer proficient in Angular, specializing in creating immersive user experiences and pixel-perfect interfaces. Passionate about delivering innovative solutions and constantly staying up-to-date with the latest industry trends.
+            </div>
+            <div class="buttons">
+                <button class="projects-btn">About me</button>
+                <button class="resume-btn">Download Resume</button>
+            </div>
+        </section>
+        <section id="aboutme">
+            <h2>About me</h2>
+            <p>Freshly out of university in the beginning of my professional web developer journey.</p>
+            <p>I consider myself a creative, fast-learning person with good problem solving skills, who is capable of working independently on projects of variuos size, from small-scale to large-scale applications.</p>
+            <p>I hope that I can become a part of a team building user-friendly, useful software.</p>
+            <div class="aboutme-buttons">
+                <button>Check out my skills</button>
+                <button>Take a look on my projects</button>
+                <button>Send me a message</button>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="chips">
+                <div class="chip" onclick="toggleChip('angular')">
+                    <div class="title">
+                        <p>Angular 2+</p>
+                    </div>
+                    <div class="text" id="angular">
+                        <p>I started learning Angular about 5 years ago. Since then, I created multiple hobby projects, my Bachelor's thesis (which you can find below) in Angular 11+ and in my previous workplace I got hired in the first place to develop new features and refactor old, bad designs in a large Angular project.</p>
+                        <p>Proficiency: 90%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('html')">
+                    <div class="title">
+                        <p>HTML/CSS</p>
+                    </div>
+                    <div class="text" id="html">
+                       <p>Can confidently build pages from scratch with the latest design trends - without Googling stuff.</p>
+                       <p>Proficiency: 99%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('material')">
+                    <div class="title">
+                        <p>Angular Material</p>
+                    </div>
+                    <div class="text" id="material">
+                       <p>Used Material in almost every of my hobby projects. I can confidently use the components without the documentation. I also have great understanding on form fields and field states.</p>
+                       <p>Proficiency: 90%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('javascript')">
+                    <div class="title">
+                        <p>JavaScript/TypeScript</p>
+                    </div>
+                    <div class="text" id="javascript">
+                       <p>I started my JS journey a little earlier than my Angular one. Personally, I prefer TypeScript.</p>
+                       <p>Proficiency: 80%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('rx')">
+                    <div class="title">
+                        <p>Rxjs (reactive programming)</p>
+                    </div>
+                    <div class="text" id="rx">
+                       <p>I know what Observables, Subscriptions and Subjects are, how they work, and can use them confidently.</p>
+                       <p>Proficiency: 80%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('wordpress')">
+                    <div class="title">
+                        <p>WordPress</p>
+                    </div>
+                    <div class="text" id="wordpress">
+                       <p>Built Landing pages, webshops, complex websites with WordPress.</p>
+                       <p>Proficiency: 90%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('figma')">
+                    <div class="title">
+                        <p>Figma</p>
+                    </div>
+                    <div class="text" id="figma">
+                       <p>I like to create designs and wireframes before I start a project. I am pretty familiar with Figma and can create pixel-perfect design based on one.</p>
+                       <p>Proficiency: 90%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('git')">
+                    <div class="title">
+                        <p>Git</p>
+                    </div>
+                    <div class="text" id="git">
+                       <p>I use git since I started university. Version control is important!</p>
+                       <p>Proficiency: 90%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('rest')">
+                    <div class="title">
+                        <p>REST APIs</p>
+                    </div>
+                    <div class="text" id="rest">
+                        <p>In almost all of my hobby projects I used APIs. I know all of the basic requests, and can confidently write CRUD operations in any language.</p>
+                       <p>Proficiency: 90%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('mongo')">
+                    <div class="title">
+                        <p>MongoDB (Atlas, Realm)</p>
+                    </div>
+                    <div class="text" id="mongo">
+                       <p>MongoDB is my database of choice! I used it for multiple hobby projects as well as for my BSc Thesis.</p>
+                       <p>Proficiency: 70%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('firebase')">
+                    <div class="title">
+                        <p>Firebase</p>
+                    </div>
+                    <div class="text" id="firebase">
+                       <p>Confident in using its simple authentication flow, it's document database and it's Firestore for storing images and videos. Love to work with Firebase because for small projects it can completly substitue backend servers.</p>
+                       <p>Proficiency: 70%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('sql')">
+                    <div class="title">
+                        <p>SQL</p>
+                    </div>
+                    <div class="text" id="sql">
+                       <p>In school projects we mostly used SQL, so I have an experience with it as well.</p>
+                       <p>Proficiency: 65%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('flutter')">
+                    <div class="title">
+                        <p>Flutter</p>
+                    </div>
+                    <div class="text" id="flutter">
+                       <p>I'm currently and actively learning Flutter through hobby projects. You can check one of them below. I know the concept of widgets and how everything is a widget in Flutter.</p>
+                       <p>Proficiency: 50%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('nest')">
+                    <div class="title">
+                        <p>Nest.js</p>
+                    </div>
+                    <div class="text" id="nest">
+                       <p>At the early stages of my BSC Thesis I chose Nest.js as backend. It went perfectly well with Angular for a while, still I decided to go serverless due to lack of documentation and support with Nest.js</p>
+                       <p>Proficiency: 40%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('ruby')">
+                    <div class="title">
+                        <p>Ruby on Rails</p>
+                    </div>
+                    <div class="text" id="ruby">
+                       <p>For one semester I learnt the basics of Ruby on Rails, built a simple application in it as well.</p>
+                       <p>Proficiency: 30%</p>
+                    </div>
+                </div>                
+                <div class="chip" onclick="toggleChip('android')">
+                    <div class="title">
+                        <p>Android development</p>
+                    </div>
+                    <div class="text" id="android">
+                       <p>We learnt the basics of Android development for one semester.</p>
+                       <p>Proficiency: 25%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('java')">
+                    <div class="title">
+                        <p>Java</p>
+                    </div>
+                    <div class="text" id="java">
+                       <p>My first object-oriented programming language. Don't really have professional experience with it yet, but I can understand and write code in Java.</p>
+                       <p>Proficiency: 30%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('asp')">
+                    <div class="title">
+                        <p>ASP.NET / C#</p>
+                    </div>
+                    <div class="text" id="asp">
+                       <p>I know the basics of the language, for one semester we had to build an application in ASP.Net.</p>
+                       <p>Proficiency: 25%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('vue')">
+                    <div class="title">
+                        <p>Vue.js</p>
+                    </div>
+                    <div class="text" id="vue">
+                       <p>For a work projects, I had to got familiar with Vue's concept, though I only had to fix a couple of minor bugs.</p>
+                       <p>Proficiency: 20%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('python')">
+                    <div class="title">
+                        <p>Python</p>
+                    </div>
+                    <div class="text" id="python">
+                       <p>For sure, I want to learn more about Pyhton. So far I know the semantics especially with image segmantation.</p>
+                       <p>Proficiency: 20%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('machine')">
+                    <div class="title">
+                        <p>Machine Learning</p>
+                    </div>
+                    <div class="text" id="machine">
+                       <p>I had 4 or 5 classes related to machine learning which I enjoyed. I definitely plan to learn more about AI, Deep learning and machine learning.</p>
+                       <p>Proficiency: 20%</p>
+                    </div>
+                </div>
+                
+                <div class="chip" onclick="toggleChip('maven')">
+                    <div class="title">
+                        <p>Maven</p>
+                    </div>
+                    <div class="text" id="maven">
+                       <p>The only Java framework I got to work with so far. For one semester I had to build a simple application with Java and Maven.</p>
+                       <p>Proficiency: 15%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>HouseManager - My Bachelor's thesis</h3>
+                    <div class="gallery">
+                        <img src="front.png">
+                        <img src="first.png">
+                        <img src="second.png">
+                        <img src="third.png">
+                    </div>
+                    <img id='firstInfobtn' class="info-icon" src="info.png">
+                </div>
+                <div class="modal" id="firstModal">
+                    <div class="modal-content">
+                        <h3>HouseManager - Real Estate webapplication</h3>
+                        <h4><span>Used Technologies:</span> Angular 13, Angular Material, MongoDB, Firebase</h4>
+                        <p>I worked about 5-6 months in this project and this is my first large-scale application which I built completely alone. There were 2 'versions' before the final one. At first I developed the app with a Nest.js backend and an Express.js middleware. The second 'attempt' used ASP.net as backend. </p>
+                        <p>The users are able to search and save other people's properties or list their own ones. HouseManager has built not only for property listings, but for Experts in every housing-related fields. Users can sign up as an expert and can advertise their services with prices. People can write reviews about them and also save experts' contact info directly to their profile.</p>
+                        <p>The app consist of features such as authentication, image upload, user profile, property profile with saving function, expert profile also with saving function.</p>
+                        <p>The most challenging part of the building process was finding the best practice of connecting the Angular client app with Firebase and MongoDB. At the end phase of the final product, I should have refactor the models and functions, because throughout the development I realized I over-complicated most of them in the beginning. </p>
+                        <p>I can say, that I learnt a lot about Angular, MongoDB, Firbase, serverless programming and Material design because of this app.</p>
+                        <h5><a href="https://housemanager-597f6.web.app/" target="_blank">Visit the Firebase hosted site</a></h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Weather and World time app - My first Flutter project</h3>
+                    <div class="gallery">
+                        <img src="weather1.jpg">
+                        <img src="weather2.jpg">
+                        <img src="weather3.jpg">
+                    </div>
+                    <img id="secondInfobtn" class="info-icon" src="info.png">
+                </div>
+                <div class="modal" id="second-modal">
+                    <div class="modal-content">
+                        <h3>Weather and World Time App</h3>
+                        <h4><span>Used Technologies:</span> Flutter and a weather info provider API</h4>
+                        <p>I started my Flutter journey about six months ago. After created a couple applications with tutorials this was my first project of my own. I worked about 2 weeks on it and of course it needs improvement and more features.</p>
+                        <p>I gained great understanding about widgets, state management and how device permissions work. Because I worked with an API, I learnt how Flutter manages data from other sources, and also how to save and get data from the device.</p>
+                        <p>After all, this is a really simple app, but it shows that I can work with widgets, APIs and storing data in Flutter. This app is definitely not my last Flutter hobby project.</p>
+                        <h5><a href="https://github.com/Dorcsyh99/weatherapp_flutter" target="_blank">Visit the Github repo</a></h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>György a Kézműves - Woocommerce webshop</h3>
+                    <div class="gallery">
+                        <img src="gyorgy1.png">
+                        <img src="gyorgy2.png">
+                        <img src="gyorgy3.png">
+                    </div>
+                    <img id="thirdInfobtn" class="info-icon" src="info.png">
+                </div>
+                <div class="modal" id="third-modal">
+                    <div class="modal-content">
+                        <h3>György a Kézműves - Handmade leather goods webshop</h3>
+                        <h4><span>Used Technologies:</span> Wordpress, Woocommerce</h4>
+                        <p>This project was built for a family friend of mine who has a small business where he creates handmade accessories from leather.</p>
+                        <p>It was about a week to make it, I redesigned a free wordpress template, added a few plugins and that was it!</p>
+                        <p>This is not my first wordpress project, it is actually the latest. I started using wordpress when I started university. I can't say I like to work in wordpress, but it is definitely easy and fast to do so.</p>
+                        <h5><a href="https://gyorgyakezmuves.hu" target="_blank">Visit the website</a></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="agenda">
+                Seeking opportunities to work on both <span>independent, smaller-scale projects as a contractor</span>, and collaborative, <span>larger-scale projects</span> under the guidance of a <span>mentor</span>. Flexible in adapting to different project sizes and eager to contribute to impactful web development initiatives.
+            </p>
+            <p class="agenda">
+                Interested in on-site (preferably hybrid) and remote opportunities.
+            </p>
+            <div class="contact-buttons">
+                <p class="contact-btn"><img src="maps-and-flags.png"> <span> Location: Budapest, Hungary</span></p>
+                <p class="contact-btn"><img src="email.png"> <span> Email: dorottya.b.99@gmail.com</span></p>
+                <p class="contact-btn"><img src="phone-call.png"> <span> Phone: +36 20 435 8748</span></p>
+            </div>
+            <div class="contact-form">
+                <h3>Write me a message and I will get back to You!</h3>
+                <form>
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your Name" autocomplete="name">
+                    <label for="company">Company (optional)</label>
+                    <input id="company" name="company" type="text" placeholder="Company" autocomplete="organization">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="Your E-mail address" autocomplete="email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about the project"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        <script src="scripts.js"></script>
+    </body>
+
+</html>
