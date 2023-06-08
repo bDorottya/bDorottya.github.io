@@ -3,26 +3,38 @@
     <head>
         <title>Dorottya Burmeister</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/desktop.css" rel="stylesheet">
+        <link href="styles/tablet.css" rel="stylesheet">
         
     </head>
 
     <body>
+        <header>
+            <a href='#aboutme'><span>About me</span></a>
+            <a href="#skills"><span>Skills</span></a>
+            <a href="#projects"><span>Projects</span></a>
+            <a href="#contact"><span>Contact</span></a>
+            <div class="ver-social">
+                <a href="linkedin.com/in/dorottya-b-399b76113" target="_blank"><img src="img/linkedin.png"></a>
+                <a href="https://github.com/bdorottya/" target="_blank"><img src="img/github-sign.png"></a>
+            </div>
+        </header>
         <nav id='menu' class="menu">
-            <span class="close" onclick="closeMenu()">X</span>
+            <button class="close" onclick="closeMenu()">X</button>
             <div class="menu-list">
-                <span>About me</span>
-                <span>Skills</span>
-                <span>Projects</span>
-                <span>Contact</span>
+                <a href='#aboutme'><span>About me</span></a>
+                <a href="#skills"><span>Skills</span></a>
+                <a href="#projects"><span>Projects</span></a>
+                <a href="#contact"><span>Contact</span></a>
             </div>
             <div class="social">
-                <span>Linkedin</span>
-                <span>Github</span>
+                <a href="linkedin.com/in/dorottya-b-399b76113" target="_blank"><img src="img/linkedin.png"></a>
+                <a href="https://github.com/bdorottya/" target="_blank"><img src="img/github-sign.png"></a>
             </div>
         </nav>
         <nav class="nav-icon">
-            <img src="align.png" onclick="openNav()">
+            <img src="img/align.png" onclick="openNav()">
         </nav>
         <section id='home'>
             <div class="heading-1">
@@ -35,7 +47,7 @@
                 Experienced frontend developer proficient in Angular, specializing in creating immersive user experiences and pixel-perfect interfaces. Passionate about delivering innovative solutions and constantly staying up-to-date with the latest industry trends.
             </div>
             <div class="buttons">
-                <button class="projects-btn">About me</button>
+                <a href="#aboutme"><button class="projects-btn">About me</button></a>
                 <button class="resume-btn">Download Resume</button>
             </div>
         </section>
@@ -45,9 +57,9 @@
             <p>I consider myself a creative, fast-learning person with good problem solving skills, who is capable of working independently on projects of variuos size, from small-scale to large-scale applications.</p>
             <p>I hope that I can become a part of a team building user-friendly, useful software.</p>
             <div class="aboutme-buttons">
-                <button>Check out my skills</button>
-                <button>Take a look on my projects</button>
-                <button>Send me a message</button>
+                <a href="#skills"><button>Check out my skills</button></a>
+                <a href="#projects"><button>Take a look on my projects</button></a>
+                <a href="#contact-form"><button>Send me a message</button></a>
             </div>
         </section>
         <section id="skills">
@@ -116,6 +128,15 @@
                        <p>Proficiency: 90%</p>
                     </div>
                 </div>
+                <div class="chip" onclick="toggleChip('bootsrtap')">
+                    <div class="title">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="text" id="bootstrap">
+                       <p>Built multiple projects with Bootstrap.</p>
+                       <p>Proficiency: 85%</p>
+                    </div>
+                </div>
                 <div class="chip" onclick="toggleChip('git')">
                     <div class="title">
                         <p>Git</p>
@@ -176,6 +197,15 @@
                     </div>
                     <div class="text" id="nest">
                        <p>At the early stages of my BSC Thesis I chose Nest.js as backend. It went perfectly well with Angular for a while, still I decided to go serverless due to lack of documentation and support with Nest.js</p>
+                       <p>Proficiency: 40%</p>
+                    </div>
+                </div>
+                <div class="chip" onclick="toggleChip('nest')">
+                    <div class="title">
+                        <p>Express.js</p>
+                    </div>
+                    <div class="text" id="nest">
+                       <p>At the early stages of my BSC Thesis I chose Express.js as middleware. Also I did a MEAN stack course recently, where I learnt the basics of Express.js and how its working with Node.js</p>
                        <p>Proficiency: 40%</p>
                     </div>
                 </div>
@@ -260,12 +290,12 @@
                 <div class="card">
                     <h3>HouseManager - My Bachelor's thesis</h3>
                     <div class="gallery">
-                        <img src="front.png">
-                        <img src="first.png">
-                        <img src="second.png">
-                        <img src="third.png">
+                        <img src="img/front.png">
+                        <img src="img/first.png">
+                        <img src="img/second.png">
+                        <img src="img/third.png">
                     </div>
-                    <img id='firstInfobtn' class="info-icon" src="info.png">
+                    <img id='firstInfobtn' class="info-icon" src="img/info.png">
                 </div>
                 <div class="modal" id="firstModal">
                     <div class="modal-content">
@@ -282,11 +312,11 @@
                 <div class="card">
                     <h3>Weather and World time app - My first Flutter project</h3>
                     <div class="gallery">
-                        <img src="weather1.jpg">
-                        <img src="weather2.jpg">
-                        <img src="weather3.jpg">
+                        <img src="img/weather1.jpg">
+                        <img src="img/weather2.jpg">
+                        <img src="img/weather3.jpg">
                     </div>
-                    <img id="secondInfobtn" class="info-icon" src="info.png">
+                    <img id="secondInfobtn" class="info-icon" src="img/info.png">
                 </div>
                 <div class="modal" id="second-modal">
                     <div class="modal-content">
@@ -301,11 +331,11 @@
                 <div class="card">
                     <h3>György a Kézműves - Woocommerce webshop</h3>
                     <div class="gallery">
-                        <img src="gyorgy1.png">
-                        <img src="gyorgy2.png">
-                        <img src="gyorgy3.png">
+                        <img src="img/gyorgy1.png">
+                        <img src="img/gyorgy2.png">
+                        <img src="img/gyorgy3.png">
                     </div>
-                    <img id="thirdInfobtn" class="info-icon" src="info.png">
+                    <img id="thirdInfobtn" class="info-icon" src="img/info.png">
                 </div>
                 <div class="modal" id="third-modal">
                     <div class="modal-content">
@@ -328,26 +358,54 @@
                 Interested in on-site (preferably hybrid) and remote opportunities.
             </p>
             <div class="contact-buttons">
-                <p class="contact-btn"><img src="maps-and-flags.png"> <span> Location: Budapest, Hungary</span></p>
-                <p class="contact-btn"><img src="email.png"> <span> Email: dorottya.b.99@gmail.com</span></p>
-                <p class="contact-btn"><img src="phone-call.png"> <span> Phone: +36 20 435 8748</span></p>
+                <p class="contact-btn"><img src="img/maps-and-flags.png"> <span> Location: Budapest, Hungary</span></p>
+                <p class="contact-btn"><img src="img/email.png"> <span> Email: dorottya.b.99@gmail.com</span></p>
+                <p class="contact-btn"><img src="img/phone-call.png"> <span> Phone: +36 20 435 8748</span></p>
             </div>
             <div class="contact-form">
                 <h3>Write me a message and I will get back to You!</h3>
-                <form>
+                <form id="contact-form">
                     <label for="name">Your Name</label>
-                    <input id="name" name="name" type="text" placeholder="Your Name" autocomplete="name">
+                    <input required="true" id="name" name="name" type="text" placeholder="Your Name" autocomplete="name">
                     <label for="company">Company (optional)</label>
                     <input id="company" name="company" type="text" placeholder="Company" autocomplete="organization">
                     <label for="email">E-mail</label>
-                    <input id="email" name="email" type="email" placeholder="Your E-mail address" autocomplete="email">
+                    <input required="true" id="email" name="email" type="email" placeholder="Your E-mail address" autocomplete="email">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Tell me about the project"></textarea>
-                    <button type="submit">Send</button>
+                    <textarea required="true" id="message" name="message" placeholder="Tell me about the project"></textarea>
+                    <button class="form-btn" type="submit">Send</button>
                 </form>
+                <div id='success' class="success-msg">
+                    Message sent successfully!
+                </div>
+                <div id="error" class="error-msg">
+                    Something went wrong..
+                </div>
             </div>
         </section>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="scripts.js"></script>
+        <script>
+            (function(){
+                emailjs.init('2nX9SNQ3CCGVZeK8l');
+            })();
+        </script>
+        <script>
+            window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                //this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_v369j7i', 'template_x59dlhj', this)
+                    .then(function() {
+                        document.getElementById('success').style.display = 'block';
+                    }, function(error) {
+                        document.getElementById('error').style.display = 'block';
+                    });
+            });
+        }
+        </script>
     </body>
 
 </html>

@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Roboto:wght@100;300;400&display=swap');
 /*grren color:  #00D393*/
 *{margin:0;padding:0}
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: rgb(30,30,30);
     font-family: 'Lato', sans-serif;
     color: white;
-    scroll-behavior: smooth;
+    
 }
 a{
     text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+
+header{
+    display: none;
 }
 .menu{
     display: none;
@@ -27,6 +37,9 @@ a{
     font-size: 22px;
     font-weight: 800;
     color: #00D393;
+    background: none;
+    border: none;
+    max-height: 50px;
 }
 
 .menu .menu-list{
@@ -37,7 +50,8 @@ a{
     align-items: center;
     font-size: 22px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.75px;
+    width: 100%;
 }
 
 .menu .menu-list span{
@@ -45,7 +59,13 @@ a{
 }
 
 .menu .social{
-    padding-top: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20% 25%;
+}
+
+.menu .social img {
+    max-width: 30px;
 }
 .nav-icon{
     padding: 10px;
@@ -123,7 +143,7 @@ a{
     font-weight: 700;
     padding: 10px 20px;
     background: none;
-    transition: .2s ease all;
+    transition: .4s ease all;
     margin-bottom: 5%;
 }
 .projects-btn:hover{
@@ -139,7 +159,11 @@ a{
     font-size: 18px;
     font-weight: 700;
     padding: 10px 20px;
-    transition: .2s ease all;
+    transition: .4s ease all;
+}
+
+.resume-btn:hover{
+    background-color: #333;
 }
 
 #aboutme{
@@ -180,17 +204,33 @@ a{
     font-size: 18px;
     font-weight: 700;
     padding: 10px 20px;
+    transition: .4s ease all;
+}
+
+.aboutme-buttons button:first-child:hover{
+    background: none;
+    border: 2px solid white;
+    color: white;
 }
 
 .aboutme-buttons button:nth-child(2){
     background-color: #00D393;
     color: #333;
     border: 2px solid #00D393;
+    
+}
+.aboutme-buttons button:nth-child(2):hover{
+    background: none;
+    border: 2px solid #00D393;
+    color: white;
 }
 
 .aboutme-buttons button:nth-child(3){
     background-color: #333;
     color: white;
+}
+.aboutme-buttons button:nth-child(3):hover{
+    background: #444;
 }
 
 #projects{
@@ -212,6 +252,7 @@ a{
 }
 
 .chip{
+    cursor: pointer;
     font-size: 16px;
     border: none;
     font-weight: 600;
@@ -282,6 +323,7 @@ a{
 
 .info-icon{
     width: 30px;
+    cursor: pointer;
 }
 
 .agenda{    
@@ -413,6 +455,45 @@ form input, form textarea{
     border-radius: 5px;
     font-size: 18px;
     padding: 10px 20px;
+}
+
+form textarea{
+    min-height: 100px;
+}
+
+.form-btn{
+    margin: 3% 5%;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 0;
+    background: #00D393;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+}
+
+.success-msg, .error-msg{
+    display: none;
+}
+
+.success-msg{
+    border-radius: 5px;
+    padding: 20px 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid darkgreen;
+    color: #333;
+    background-color: lightgreen;
+}
+
+.error-msg{
+    border-radius: 5px;
+    padding: 20px 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid crimson;
+    color: white;
+    background-color: lightcoral;
 }
 
 

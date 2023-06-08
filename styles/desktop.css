@@ -1,0 +1,93 @@
+@media only screen and (min-width: 1000px){
+    header{
+        display: flex;
+        max-width: 100%;
+        padding: 3% 20%;
+        justify-content: space-evenly;
+    }
+    a{color: inherit;}
+    
+    
+    .ver-social{
+        align-self: flex-end;
+    }
+
+    .ver-social img{
+        max-width: 25px;
+        padding: 0 10px;
+    }
+
+    nav{
+        display: none;
+    }
+    #home{
+        height: 70vh;
+    }
+    .heading-1{
+        padding-bottom: 1%;
+    }
+    .heading-2{
+        font-size: 66px;
+        padding-bottom: 10%;
+    }
+    .summary{
+        text-align: left;
+        font-size: 22px;
+        padding: 0 5% 0 0;
+    }
+    .buttons{
+        margin-top: 10%;
+        align-items: flex-start;
+    }
+
+    .projects-btn{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .resume-btn{
+        font-size: 20px;
+    }
+    #aboutme{
+        background-color: #00d39479;
+        padding: 5% 10%;
+    }
+    
+    #aboutme h2{
+        font-size: 40px;
+        margin-bottom: 7%;
+    }
+
+    #aboutme p{
+        font-size: 20px;
+    }
+
+    .aboutme-buttons{
+        margin-top: 5%;
+    }
+
+    .aboutme-buttons button{
+        margin: 10px 0;
+    }
+
+    #skills, #projects, #contact{
+        padding: 5% 10%;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card{
+        max-width: 30%;
+        justify-content: space-evenly;
+    }
+
+    .card:nth-child(2) .gallery img{
+        max-width: 100px;
+    }
+
+
+
+}
