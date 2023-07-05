@@ -22,13 +22,16 @@ header{
     display: none;
 }
 .menu{
-    display: none;
+    
     position: fixed;
+    left: -300px;
+    opacity: 0;
     width: 70%;
     height: 100vh;
     background-color: rgba(0,0,0,0.95);
     color: white;
     font-size: 16px;
+    transition: 1s ease all;
     
 }
 .menu .close{
@@ -70,6 +73,7 @@ header{
 }
 .nav-icon{
     padding: 10px;
+    display: sticky;
 }
 .nav-icon img{
     width: 50px;

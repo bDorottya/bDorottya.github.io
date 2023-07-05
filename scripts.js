@@ -1,9 +1,11 @@
 function closeMenu(){
-    document.getElementById("menu").style.display = 'none';
+    document.getElementById("menu").style.left = '-300px';
+    document.getElementById("menu").style.opacity = 0;
 }
 
 function openNav(){
-    document.getElementById("menu").style.display = 'block';
+    document.getElementById("menu").style.left = 0;
+    document.getElementById("menu").style.opacity = 1;
 }
 
 function toggleChip(skill){
